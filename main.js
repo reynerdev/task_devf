@@ -136,4 +136,4 @@ author("Reyner", "Loza", "PE", "BLABLABLA", "M", 25)
 .then(body => idValue(body.id))
 .then(body => update(body.id, "Reyner", "Loza", "PE", "BLABLABLA", "M", 25))
 .then(body => deleteById(body.id))
-.then(()=> console.log("Eliminado"));
+.then(()=> console.log("Eliminado")).catch("Fatal Error");
